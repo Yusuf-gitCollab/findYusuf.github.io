@@ -1,0 +1,122 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:  'Roboto', sans-serif;
+}
+
+.heading {
+  font-family: 'Merriweather', sans-serif;
+}
+
+.introduction {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: white;
+}
+
+.banner {
+  text-align: center;
+  max-width: 50%;
+}
+
+.banner h1 {
+  font-size: 5rem;
+}
+
+.banner-para {
+  padding: 3em 0;
+}
+
+.banner-para p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.banner .btn {
+  position: relative;
+  top: 5em;
+}
+
+.banner .btn a{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.5em 1em;
+  background: white;
+  color: black;
+}
+
+/*  APP  */
+.application {
+  display:grid;
+  grid-template-columns: 20% 80%;
+  height: 100vh;
+}
+
+.navigation {
+  background: #11161a;
+  color: #dbe2e8;
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation .logo,
+.navigation .algo-list {
+  /* background: red; */
+  padding: 1em 0;
+}
+
+.navigation .logo {
+  color:  #02b3e4;
+  margin-bottom: 1em;
+}
+
+.logo-text {
+  font-size: 1.4rem;
+}
+
+.play-container {
+  padding: 1em 0.2em 0.5em;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white; 
+}
+
+.play-container h3 {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+.algo-list h3 {
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+
+.algo-list div {
+  list-style: none;
+  padding: 1em 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.play-container:hover,
+.algo-list div:hover {
+  background: #3f646e;
+  /* color:  */
+}
+
+
+

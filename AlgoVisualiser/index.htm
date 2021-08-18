@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="./style.css" rel="stylesheet">
+    <title> AlgoVisualizer </title>
+</head>
+<body>
+    <section class="introduction">
+        <div class="banner">
+            <h1 class="heading">Algo Visualizer</h1>
+            <div class="banner-para">
+                <p>
+                Algo Visualizer is a visualisation tool to understand the working of some common computer 
+                science algorithms. I have made Algo Visualizer using HTML, CSS, Vanilla Javascript and HTML5 Canvas.
+                </p>
+            </div>
+            <div class="banner-para">
+                <h2 class="heading"> How it works? </h2>
+                <p> It's working is quite simple! You just have to select the Algorithm you want to visualize from the navigation.
+                    And then click on the play button and thats it!
+                </p>
+            </div>          
+            <div class="btn">
+                <a href="../index.html"> Back</a>
+                <a href="#app"> Try it</a>
+            </div>
+        </div>
+    </section>
+    <section id="app" class="application">
+        <nav class="navigation">
+            <div class="logo">
+                <i class="fas fa-code fa-2x"> </i> 
+                <span class="logo-text">AlgoVisualizer</span>
+            </div>
+            <div class="play-container" type="button" id="playBtn">
+               <h3 class="heading" > Play </h3> <i class="fas fa-play"></i>
+            </div>
+            <div class="algo-list">
+                <h3 class="heading">Sorting Algorithm</h3>
+
+                <div id="bubbleSortBtn"> Bubble Sort </div>
+                <div id="insertionSortBtn" >Insertion Sort </div>
+                <div id="selectionSortBtn" > Selection Sort </div>
+                <div id="mergeSortBtn" > Merge Sort</div>
+                <div id="countingSortBtn" > Counting Sort</div>
+            
+                <!-- <h3 class="heading"> Path finding Algo</h3>
+                
+                <div>Breadth first search</div>
+                <div> Depeath first search</div> -->
+            </div>
+            
+            
+        </nav>
+        <div class="canvas-container">
+            <canvas id="myCanvas"></canvas>
+        </div>
+    </section>
+    
+    <script type="module" src="./scripts/canvas.js"> </script>
+</body>
+</html>
