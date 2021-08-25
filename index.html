@@ -4,121 +4,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Serif+JP&display=swap" rel="stylesheet">
-    <title>HarshSingh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Harsh Singh</title>
 </head>
 <body>
-    <section class="banner" id="home">
+    <header>
         <div class="container">
-            <div class="wrapper">
-                <div class="intro">
-                    <h1>Hello, I'm <span> Harsh Singh</span>. <br>
-                    Passionate about computers and embedded systems.</h1>
+            <nav class="navbar">
+                <div class="brand-title grow"> <a href="./index.html"> &lt;DevHarsh/&gt;</a></div>
+                <i class="fas fa-bars fa-2x ham-icon"></i>
+                <div class="navbar-links">
+                    <ul>
+                        <li><a href="#home"> 01.Home </a></li>
+                        <li><a href="#about"> 02.About</a></li>
+                        <li><a href="#projects"> 03.Work</a></li>
+                        <li><a href="#contact"> 04.Contact </a></li>
+                        <a href="" class="btn"> Resume </a>
+                    </ul>
                 </div>
-                <div class="btn">
-                    <a href="#about"> View my work <i class="fas fa-arrow-right"></i> </a>
-                </div>
-            </div>
+            </nav>
         </div>
-    </section>
-    <section class="about" id="about">
-        <nav id="navBar">
-            <div class="container">
-                <ul>
-                    <li> <a href="#home"> Home </a> </li>
-                    <li> <a href="#about"> About </a> </li>
-                    <li> <a href="#projects"> Projects </a> </li>
-                    <li> <a href="#contact"> Contact </a> </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container content">
-            <h1>Background and Skills</h1>
+        <section id="home" class="home">     
+                <div class="container grid">
+                    <div class="intro">                    
+                        <h1> Hi, my name is </h1>        
+                        <h2 class="big-heading"> Harsh  Singh.</h2>          
+                        <h3 class="big-heading"> I build Embedded Applications.</h3>
+                        <p>I am a first year Computer Science student at Gauhati University.<br>
+                            I love dealing with low-level stuff,  and that's the reason I chose <br>
+                            Embedded System Engineer as my career.<br> Currently I am focussed on 
+                            learning and gaining knowledge<br> by getting hands on experience.
+                        </p>
+        
+                        <a href="#projects" class="btn"> See my Work </a>
+                    </div>
+                    <div class="img">
+                        <img  src="./images/nicolas-horn-MTZTGvDsHFY-unsplash.jpg" alt="my-photo">
+                    </div>
+                </div>
+        </section>
+    </header>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-heading">
+                02. About Me 
+            </h2>
             <div class="grid">
-                <div class="about-me-div">
-                    <p>Hi, my name is <span>Harsh Kumar Singh</span></p>
-                    <p>I am a <span>self-taught</span> developer. I am currently a freshman studying 
-                        information technology at Gauhati University.  </p>
+                <div class="about-me-text">
+                    <div class="img">
+                        <img class="grow" src="./images/nicolas-horn-MTZTGvDsHFY-unsplash.jpg" alt="" >
+                    </div>
+                    <p> Hi, my name is <span>Harsh Kumar Singh.</span></p>
+                    <p>I am a self-taught developer. I am currently a freshman 
+                        studying Information Technology at Gauhati University.
+                    </p>
                     <p>It was the year 2020, when I discovered videos of web development on Youtube. 
-                        Slowly I learned about the endless possibilities of computer programs and started learning to code on my own.
-                        Ever since this initial exposure, programming has defined my life.
+                        Slowly I learned about the endless possibilities of computer programs and 
+                        started learning to code on my own. Ever since this initial exposure, 
+                        programming has defined my life.
                     </p>
                     <p>
-                        I initially learnt web technologies. I know <span>HTML</span>, <span>CSS</span>, <span>Javascript</span>. 
-                        Then I learnt <span> C++ </span> and started doing <span> Competetive Programming</span> on LeetCode.
-                        I have great intrest in embedded systems and aspire to become a embedded systems engineer!
+                        I initially learnt web technologies. I know <span>HTML</span>, <span> CSS</span>, <span>Javascript</span>. 
+                        Then I learnt <span>C++</span> and started doing <span>Competetive Programming</span> on LeetCode.
+                         I have great intrest in embedded systems and aspire to become a embedded 
+                         systems engineer!
                     </p>
                 </div>
-                <div class="skill-bar">
-                    <div class="skill">
-                        <div class="skill-name"> <p>HTML </p></div>
-                        <div class="level html"></div>
+                <div class="skills">
+                    <div class="bar">
+                        <div class="skill-name">
+                            <p> C++ </p>
+                        </div>
+                        <div class="proficiency cpp">
+                            <p class="proficiency-text"> 89% </p>
+                        </div>
                     </div>
-                    <div class="skill">
-                        <div class="skill-name"> <p>CSS</p></div>
-                        <div class="level css"></div>
+                    <div class="bar">
+                        <div class="skill-name">
+                            <p>JS</p>
+                        </div>
+                        <div class="proficiency js">
+                            <p class="proficiency-text"> 89%</p>
+                        </div>
+                        
                     </div>
-                    <div class="skill">
-                        <div class="skill-name"> <p>JavaScript</p></div>
-                        <div class="level js"></div>
+                    <div class="bar">
+                        <div class="skill-name">
+                            <p>C</p>
+                        </div>
+                        <div class="proficiency c">
+                            <p class="proficiency-text"> 75% </p>
+                        </div>
+                        
                     </div>
-                    <div class="skill">
-                        <div class="skill-name"> <p>C++</p></div>
-                        <div class="level cpp"></div>
+                    
+                    <div class="bar">
+                        <div class="skill-name">
+                            <p> Git </p>
+                        </div>
+                        <div class="proficiency git">
+                            <p class="proficiency-text"> 78%</p>
+                        </div>
+                        
                     </div>
-                    <div class="skill">
-                        <div class="skill-name"> <p>C </p></div>
-                        <div class="level c"></div>
+                    <div class="bar">
+                        <div class="skill-name">
+                            <p> HTML</p>
+                        </div>
+                        <div class="proficiency htm">
+                            <p class="proficiency-text"> 95%</p>
+                        </div>
+                        
                     </div>
-                    <div class="skill">
-                        <div class="skill-name"> <p>React </p></div>
-                        <div class="level react"></div>
+                    <div class="bar">
+                        <div class="skill-name">
+                            <p>CSS</p>
+                        </div>
+                        <div class="proficiency css">
+                            <p class="proficiency-text">88%</p>
+                        </div>
+                        
                     </div>
+            
                 </div>
             </div>
         </div>
     </section>
-    <section class="projects" id="projects">
-        <div class="container content">
-            <h1> Projects </h1>
-            <div class="grid-projects">
-                <div class="project-item">
-                    <a href="./AlgoVisualiser/index.htm" class="img"> <img  src="images/algoImag.png" alt="algoVisualizer" /></a>
-                    <!-- <div class="img"></div> -->
-                    <div>
-                        <h2>AlgoVisualizer</h2>
-                        <a href="./AlgoVisualiser/index.htm"> View </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-heading">
+                03. Some Things I've Built
+            </h2>
+            <div class="project-div">
+                <div class="project-item grow">
+                    <div class="project-wrapper">
+                        <img src="./images/AlgoViz.png" alt="">
+                        <div class="project-details">
+                            <h2>AlgoVisualizer</h2>
+                            <p> A web app for visualising computer algorithms such as 
+                                sorting algorithms and path finding algorithms.
+                                Made only by using HTML 5 Canvas.
+                            </p>
 
+                            <a href="./AlgoVisualiser/index.htm" class="btn">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-wrapper grow">
+                        <img src="./images/erik-mclean-FriutX_vqnc-unsplash.jpg" alt="">
+                        <div class="project-details">
+                            <h2> My Space</h2>
+                            <p>
+                                A web app for booking parking lot online. You can type the location 
+                                or search it on google map. The parking lots are equipped with 
+                                ARM-30fx sensors and all the data is store in the cloud.
+                            </p>
+                            <a href="comingSoon.html" class="btn">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item grow">
+                    <div class="project-wrapper">
+                        <img src="./images/possessed-photography-dRMQiAubdws-unsplash.jpg" alt="">
+                        <div class="project-details">
+                            <h2> Robotic Chess Player </h2>
+                            <p>
+                                A fun way to improve you chess skills is by playing with an AI controlled 
+                                Robotic Arm. The project is made using tensorflow , ARM-30fx sensors and 
+                                PIC micro controllers.
+                            </p>
+                            <a href="comingSoon.html" class="btn">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer id="contact">
        <div class="container">
-            <h1> Contact </h1>
-            <p> Email: hs34kumar@gmail.com</p>
-            <div class=links>
-                <div class="link-item">
-                    <a href=""> <i class="fab fa-linkedin-in ">  </i> <span>LinkedIn</span></a>
-                </div>
-                <div class="link-item">
-                    <a href="https://github.com/Yusuf-gitCollab" target="_blank"> <i class="fab fa-github"> </i> <span>GitHub</span> </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://discord.com/channels/877454572292038686/877454572292038689" target="_blank"> <i class="fab fa-discord"></i> <span>Discord</span> </a>
-                </div>
-                <div class="link-item">
-                    <a href="https://leetcode.com/Baby-Coder/" target="_blank"> LeetCode </a>
-                </div>
-                <div class="link-item">
-                    <a href=""> <i class="fab fa-codepen"></i> <span>Codepen</span> </a>
-                </div>
+        <h2 class="section-heading">04. What's Next ? </h2>
+            <div class="contact-text">
+                <h4 class="big-heading"> Get In Touch.</h4>
+                <p class="grow">My Email: <span> hs34kumar@gmail.com </span></p>
             </div>
+
+            <div class="links">
+                <a href="" class="btn"> <i class="fab fa-linkedin-in"></i> LinkedIn  </a>
+                <a href="" class="btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="" class="btn"><i class="fas fa-code"></i> LeetCode</a>
+                <a href="" class="btn"><i class="fab fa-discord"></i> Discord</a>
+            </div>
+
+            <p class="copyright">Designed and Built by Harsh a.k.a Yusuf</p>
        </div>
     </footer>
 

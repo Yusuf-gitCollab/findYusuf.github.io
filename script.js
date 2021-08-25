@@ -1,12 +1,6 @@
-var navBar = document.getElementById("navBar");
-var sticky = navBar.offsetTop;
+const hamBtn = document.getElementsByClassName("ham-icon")[0];
+const navbarLink = document.getElementsByClassName("navbar-links")[0];
 
-window.onscroll = stickNav;
-
-function stickNav() {
-    if(window.pageYOffset >= sticky) {
-        navBar.classList.add("sticky");
-    }else {
-        navBar.classList.remove("sticky");
-    }
-}
+hamBtn.addEventListener("click", () => {
+    navbarLink.classList.toggle('active');
+})
